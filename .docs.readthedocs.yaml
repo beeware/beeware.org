@@ -6,4 +6,4 @@
      python: "3.12"
 
  mkdocs:
-   configuration: mkdocs.yml
+   configuration: docs-redirect/mkdocs.yml
