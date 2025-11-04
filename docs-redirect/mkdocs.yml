@@ -6,3 +6,10 @@ plugins:
   redirects:
     redirect_maps:
       "index.md": "https://beeware.org/docs"
+
+theme:
+  name: mkdocs
+  locale: en
+  custom_dir: overrides/
+  static_templates:
+    - 404.html
