@@ -1,7 +1,6 @@
-- [Home](index.md)
 - [About](about/index.md)
     - [Goals](about/goals.md)
-      - [History](about/history.md)
+        - [History](about/history.md)
 - [Documentation](documentation/index.md)
 - [Community](community/index.md)
 - [Contributing](contributing/index.md)
