@@ -13,6 +13,8 @@ validation:
 extra:
   project_name: beeware
   formal_name: BeeWare
+  hide_dev_links: true
+  website: true
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/beeware
@@ -24,6 +26,11 @@ extra:
       link: https://beeware.org/bee/chat/
       name: BeeWare on Discord
 
+
+extra_css:
+  - stylesheets/beeware_theme_temp.css  # TODO: Included for iteration; move to beeware-theme.css in docs-tools for final.
+  - stylesheets/beeware.css
+
 theme:
   name: material
   language: en
@@ -32,10 +39,11 @@ theme:
   features:
     - content.tabs.link
     - toc.follow
-    - navigation.indexes
-    - navigation.footer
     - navigation.tabs
     - navigation.tabs.sticky
+    - navigation.indexes
+    - navigation.path
+    - navigation.footer
     - search.suggest
     - search.highlight
     - search.share
@@ -76,10 +84,12 @@ markdown_extensions:
     permalink: true
     title: On this page
   attr_list: {}
+  md_in_html: {}
 
 plugins:
   search: {}
+  blog:
+    blog_dir: news
   autorefs: {}
-  literate-nav:
-    nav_file: SUMMARY.md
+  literate-nav: {}
   macros: {}

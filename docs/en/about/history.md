@@ -1,0 +1,8 @@
+---
+hide:
+    - navigation
+---
+
+# History
+
+Content.

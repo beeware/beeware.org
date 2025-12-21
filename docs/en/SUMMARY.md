@@ -1,0 +1,8 @@
+- [About](about/index.md)
+    - [Goals](about/goals.md)
+        - [History](about/history.md)
+- [Documentation](documentation/index.md)
+- [Community](community/index.md)
+- [Contributing](contributing/index.md)
+- [News](news/index.md)
+- [Donate](membership/index.md)
