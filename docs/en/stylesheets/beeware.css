@@ -12,6 +12,7 @@
 .md-path {
     margin-top: 0;
     padding-top: 0;
+    font-size: 1rem;
 }
 
 @media screen and (min-width: 76.25em) {
@@ -308,6 +309,12 @@ h2#sidebar {
 
 .md-nav--primary .md-nav__item {
     font-size: 1rem;
+}
+
+@supports selector(::-webkit-scrollbar) {
+    [dir=ltr] .md-sidebar__inner {
+        padding-right: unset;
+    }
 }
 
 /* About page */
