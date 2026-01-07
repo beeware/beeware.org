@@ -7,7 +7,7 @@ hide:
 So who are the people behind BeeWare? Well, there's a huge group of contributors, but the project is managed by the Bee Team.
 
 
-## Current team
+## Current team members
 
 <div class="team-member" markdown="1">
 <div class="team-bio" markdown="1">
@@ -176,11 +176,9 @@ Kattni is a creator, community leader, programmer, technical writer, maker, phot
 </div>
 </div>
 </div>
-<div class="team-emeritus-title" markdown="1">
 
 ## Emeritus team members
 
-</div>
 <div class="team-member" markdown="1">
 <div class="team-bio" markdown="1">
 

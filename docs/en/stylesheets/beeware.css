@@ -3,11 +3,6 @@
     max-width: 70rem;
 }
 
-/* Remove header markers to avoid spacing issues with longer headers. Use the ToC instead. */
-.md-typeset .headerlink {
-    display: none;
-}
-
 /* Cleans up vertical spacing on breadcrumbs. */
 .md-path {
     margin-top: 0;
@@ -68,6 +63,7 @@
 @media screen and (min-width: 60em) {
     .md-sidebar__scrollwrap {
         margin-top: 0;
+        padding-bottom: 0;
     }
 }
 
@@ -350,9 +346,10 @@ h2#sidebar {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: light-dark(#ECEEEF, #343A40);
+    background-color: light-dark(#E9ECEF, #282D32);;
     border-radius: 5px;
     padding-bottom: 1rem;
+    /*margin-right: -5rem;*/
 }
 
 .tutorial-info {
@@ -365,7 +362,7 @@ h1.featured-tools,
 h1.other-tools {
     text-align: center;
     margin-top: 2rem;
-    margin-left: 1em;
+    /*margin-left: 5rem;*/
 }
 
 .tutorial-logo {
@@ -421,6 +418,11 @@ a.docs-tutorial-button:hover {
     width: 50%;
 }
 
+.briefcase {
+    margin-left: 5rem;
+    /*margin-right: -5rem;*/
+}
+
 .featured-logo {
     width: 150px;
     display: inline-block;
@@ -456,7 +458,7 @@ h4.chaquopy-name {
 
 div[class*="-info"] p {
     margin-top: 0;
-    max-width: 37rem;
+    max-width: 42rem;
 ;
 }
 
@@ -466,9 +468,10 @@ div[class*="-info"] p {
 
 h1.beeware-project {
     margin-bottom: 0.64rem;
+    text-align: center;
+    margin-top: 2rem;
 }
 
-h1.beeware-project ~ p {
-    max-width: 44rem;
-    padding-right: 4rem;
+h2.beeware-project ~ p {
+    max-width: 45rem;
 }

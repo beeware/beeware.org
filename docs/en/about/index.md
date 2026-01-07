@@ -5,6 +5,22 @@ hide:
 
 # About
 
+## Goals
+
+The [goals](goals.md) of the BeeWare project.
+
+## History
+
+The [history](history.md) of the BeeWare project.
+
+## Team
+
+The [BeeWare Team](team.md).
+
+## Contact
+
+How to get in [contact](contact.md) with the team.
+
 ## Meet Brutus
 
 ![Brutus the Bee](../images/brutus.png)
@@ -19,18 +35,6 @@ community - we're shepherds of the community, and we'll provide
 direction, but we know the real work is done by the community as a
 whole.
 
-## Goals
+## Branding guidelines
 
-The [goals](goals.md) of the BeeWare project.
-
-## Team
-
-The [BeeWare Team](team.md).
-
-## History
-
-The [history](history.md) of the BeeWare project.
-
-## Contact
-
-How to get in [contact](contact.md) with the team.
+BeeWare [branding](branding.md).
