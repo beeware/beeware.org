@@ -1,6 +1,20 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 copyright: © Russell Keith-Magee
 
+nav:
+  - About:
+      - "about/index.md"
+  - Documentation:
+      - "docs/index.md"
+  - Community:
+      - "community/index.md"
+  - Contributing:
+      - "contributing/index.md"
+  - News:
+      - "news/index.md"
+  - Donate:
+      - "membership/index.md"
+
 not_in_nav: |
   /index.md
 
@@ -13,6 +27,13 @@ validation:
 extra:
   project_name: beeware
   formal_name: BeeWare
+  hide_dev_links: true
+  website: true
+  translated: true
+  min_python_version: "3.10"  # The oldest supported Python version
+  min_python_version_tag: "310"  # The tag version of the minimum python version
+  recent_python_version: "3.13"  # The newest Python version known to work on all platforms
+  docs_python_version: "3.13"  # The version of Python required to build the documentation
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/beeware
@@ -23,6 +44,11 @@ extra:
     - icon: fontawesome/brands/discord
       link: https://beeware.org/bee/chat/
       name: BeeWare on Discord
+  github_icon: <i class="fa-github fa-brands" aria-hidden="true"></i>
+
+
+extra_css:
+  - stylesheets/beeware.css
 
 theme:
   name: material
@@ -32,10 +58,12 @@ theme:
   features:
     - content.tabs.link
     - toc.follow
-    - navigation.indexes
-    - navigation.footer
     - navigation.tabs
     - navigation.tabs.sticky
+    - navigation.indexes
+    - navigation.sections
+    - navigation.path
+    - navigation.expand
     - search.suggest
     - search.highlight
     - search.share
@@ -66,6 +94,7 @@ markdown_extensions:
   pymdownx.superfences: {}
   pymdownx.blocks.admonition: {}
   pymdownx.blocks.caption: {}
+  pymdownx.details: {}
   pymdownx.blocks.tab:
     alternate_style: true
   pymdownx.snippets:
@@ -76,10 +105,18 @@ markdown_extensions:
     permalink: true
     title: On this page
   attr_list: {}
+  md_in_html: {}
+  admonition: {}  # Enabled for all admonition types EXCEPT note and admonition (which defaults to note)
 
 plugins:
   search: {}
-  autorefs: {}
-  literate-nav:
-    nav_file: SUMMARY.md
-  macros: {}
+  blog:
+    blog_dir: news
+    post_url_format: "{categories}/{slug}"
+    post_url_max_categories: 1
+    categories_url_format: "{slug}"
+  autorefs:
+    resolve_closest: true  # autorefs warns of the Usage headings begin duplicates without this - we will have to assign unique ids to all of them otherwise
+#  literate-nav: {}
+  macros:
+    include_dir: ../website
